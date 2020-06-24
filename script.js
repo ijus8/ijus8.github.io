@@ -252,7 +252,12 @@ var current;
 var currentBackground;
 
 function keyUpEvent(e)
-			{if (current) current.style.background = "";}
+	{
+    e = e || window.event;
+    if (current) {
+        current.style.background = "";
+        }
+    }
 
 function keyDownEvent(e)
     {
