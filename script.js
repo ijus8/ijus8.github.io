@@ -335,13 +335,12 @@ function keyDownEvent(e)
     var backslash_2 = document.getElementById("keyboard_backslash");
         if(x == "50")
 			{
-			// two_1.currentTime=0;
-            // two_1.play();
+			two_1.currentTime=0;
+            two_1.play();
 			currentBackground = two_2.style.background;
 			two_2.style.background="url('../03_production/images/pressed_black.png')no-repeat";
 			two_2.style.backgroundSize="55%";
             current = two_2;
-            play_keyboard_2();
 			}
 		else if(x == "51")
 			{
