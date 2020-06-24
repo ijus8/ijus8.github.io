@@ -1,5 +1,771 @@
-body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: #5a5a5a;
-}
+@charset "utf-8";
+/* CSS Document */
+body,html
+	{
+	width:100%;
+	height:100%;
+	margin:0;
+	text-align:center;
+	background-color:#000;
+	}
+#screen
+	{
+	width:100%;
+	height:100%;
+	top:0;
+	margin:auto;
+	position:absolute;
+	overflow:hidden;
+	transition:all .65s ease 0s;
+	}
+#videoframe
+	{
+	width:0;
+	height:0;
+	padding:0%;
+	z-index:1;
+	position:absolute;
+	top:35%;
+	left:40%;
+	overflow:hidden;
+	transition:all .75s ease 1s;
+	}
+#video
+	{
+	top:0;
+	left:0; 
+	opacity:1;
+	transition:all .75s ease 1s;
+	}
+#keyboard
+	{
+	width:95%;
+	min-width:950px;
+	height:40%;
+	min-height:400px;
+	bottom:0;
+	left:3%;
+	position:absolute;
+	overflow:hidden;
+	}
+	#keyboard_Q
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:0;
+		position:absolute;
+		background: url("../03_production/images/white_left.png") no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_Q:hover
+			{
+			background:url("../03_production/images/hover_white_left.png") no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_Q:active
+			{
+			background:url("../03_production/images/pressed_white_left.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_W
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:4.75%;
+		position:absolute;
+		background:url("../03_production/images/white_middle.png") no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_W:hover
+			{
+			background-color:#ddd;
+			background:url("../03_production/images/hover_white_middle.png") no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_W:active
+			{
+			background:url("../03_production/images/pressed_white_middle.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_E
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:9.5%;
+		position:absolute;
+		background:url("../03_production/images/white_right.png") no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_E:hover
+			{
+			background:url("../03_production/images/hover_white_right.png") no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_E:active
+			{
+			background:url("../03_production/images/pressed_white_right.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_R
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:14.25%;
+		position:absolute;
+		background:url("../03_production/images/white_left.png") no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_R:hover
+			{
+			background:url("../03_production/images/hover_white_left.png") no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_R:active
+			{
+			background:url("../03_production/images/pressed_white_left.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_T
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:19%;
+		position:absolute;
+		background:url("../03_production/images/white_middle.png")no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_T:hover
+			{
+			background:url("../03_production/images/hover_white_middle.png")no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_T:active
+			{
+			background:url("../03_production/images/pressed_white_middle.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_Y
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:23.75%;
+		position:absolute;
+		background:url("../03_production/images/white_middle.png")no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_Y:hover
+			{
+			background:url("../03_production/images/hover_white_middle.png")no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_Y:active
+			{
+			background:url("../03_production/images/pressed_white_middle.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_U
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:28.5%;
+		position:absolute;
+		background:url("../03_production/images/white_right.png")no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_U:hover
+			{
+			background:url("../03_production/images/hover_white_right.png")no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_U:active
+			{
+			background:url("../03_production/images/pressed_white_right.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_I
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:33.25%;
+		position:absolute;
+		background:url("../03_production/images/white_left.png")no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_I:hover
+			{
+			background:url("../03_production/images/hover_white_left.png")no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_I:active
+			{
+			background:url("../03_production/images/pressed_white_left.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_O
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:38%;
+		position:absolute;
+		background:url("../03_production/images/white_middle.png")no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_O:hover
+			{
+			background:url("../03_production/images/hover_white_middle.png")no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_O:active
+			{
+			background:url("../03_production/images/pressed_white_middle.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_P
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:42.75%;
+		position:absolute;
+		background:url("../03_production/images/white_right.png")no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_P:hover
+			{
+			background:url("../03_production/images/hover_white_right.png")no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_P:active
+			{
+			background:url("../03_production/images/pressed_white_right.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_Z
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:47.5%;
+		position:absolute;
+		background:url("../03_production/images/white_left.png")no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_Z:hover
+			{
+			background:url("../03_production/images/hover_white_left.png")no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_Z:active
+			{
+			background:url("../03_production/images/pressed_white_left.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_X
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:52.25%;
+		position:absolute;
+		background:url("../03_production/images/white_middle.png")no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_X:hover
+			{
+			background:url("../03_production/images/hover_white_middle.png")no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_X:active
+			{
+			background:url("../03_production/images/pressed_white_middle.png")no-repeat;
+			background-size:80%;
+			}
+	#keyboard_C
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:57%;
+		position:absolute;
+		background:url("../03_production/images/white_middle.png")no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_C:hover
+			{
+			background:url("../03_production/images/hover_white_middle.png")no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_C:active
+			{
+			background:url("../03_production/images/pressed_white_middle.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_V
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:61.75%;
+		position:absolute;
+		background:url("../03_production/images/white_right.png")no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_V:hover
+			{
+			background:url("../03_production/images/hover_white_right.png")no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_V:active
+			{
+			background:url("../03_production/images/pressed_white_right.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_B
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:66.5%;
+		position:absolute;
+		background:url("../03_production/images/white_left.png")no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_B:hover
+			{
+			background:url("../03_production/images/hover_white_left.png")no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_B:active
+			{
+			background:url("../03_production/images/pressed_white_left.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_N
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:71.25%;
+		position:absolute;
+		background:url("../03_production/images/white_middle.png")no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_N:hover
+			{
+			background:url("../03_production/images/hover_white_middle.png")no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_N:active
+			{
+			background:url("../03_production/images/white_middle.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_M
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:76%;
+		position:absolute;
+		background:url("../03_production/images/white_right.png")no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_M:hover
+			{
+			background:url("../03_production/images/hover_white_right.png")no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_M:active
+			{
+			background:url("../03_production/images/pressed_white_right.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_comma
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:80.75%;
+		position:absolute;
+		background:url("../03_production/images/white_left.png")no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_comma:hover
+			{
+			background:url("../03_production/images/hover_white_left.png")no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_comma:active
+			{
+			background:url("../03_production/images/pressed_white_left.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_period
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:85.5%;
+		position:absolute;
+		background:url("../03_production/images/white_middle.png")no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_period:hover
+			{
+			background:url("../03_production/images/hover_white_middle.png")no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_period:active
+			{
+			background:url("../03_production/images/pressed_white_middle.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_backslash
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:90.25%;
+		position:absolute;
+		background:url("../03_production/images/white_middle.png")no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_backslash:hover
+			{
+			background:url("../03_production/images/hover_white_middle.png")no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_backslash:active
+			{
+			background:url("../03_production/images/pressed_white_middle.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_filler
+		{
+		width:4.5%;
+		height:90%;
+		bottom:5%;
+		left:95%;
+		position:absolute;
+		background:url("../03_production/images/white_right.png")no-repeat;
+		background-size: 80%;
+		}
+		#keyboard_filler:hover
+			{
+			background:url("../03_production/images/hover_white_right.png")no-repeat;
+			background-size: 80%;
+			}
+		#keyboard_2:active
+			{
+			background:url("../03_production/images/pressed_white_right.png")no-repeat;
+			background-size: 80%;
+			}
+	#keyboard_2
+		{
+		width:3.5%;
+		height:100%;
+		top:0;
+		left:2.75%;
+		position:absolute;
+		background:url("../03_production/images/black.png")no-repeat;
+		background-size: 55%;
+		}
+        #keyboard_2:hover
+			{
+			background:url("../03_production/images/hover_black.png")no-repeat;
+			background-size: 55%;
+			}
+		#keyboard_2:active
+			{
+			background:url("../03_production/images/pressed_black.png")no-repeat;
+			background-size: 55%;
+			}
+	#keyboard_3
+		{
+		width:3.5%;
+		height:65%;
+		top:0;
+		left:7.5%;
+		position:absolute;
+		background:url("../03_production/images/black.png")no-repeat;
+		background-size: 55%;
+		}
+		#keyboard_3:hover
+			{
+			background:url("../03_production/images/hover_black.png")no-repeat;
+			background-size: 55%;
+			}
+		#keyboard_3:active
+			{
+			background:url("../03_production/images/pressed_black.png")no-repeat;
+			background-size: 55%;
+			}
+	#keyboard_5
+		{
+		width:3.5%;
+		height:65%;
+		top:0;
+		left:17%;
+		position:absolute;
+		background:url("../03_production/images/black.png")no-repeat;
+		background-size: 55%;
+		}
+		#keyboard_5:hover
+			{
+			background:url("../03_production/images/hover_black.png")no-repeat;
+			background-size: 55%;
+			}
+		#keyboard_5:active
+			{
+			background:url("../03_production/images/pressed_black.png")no-repeat;
+			background-size: 55%;
+			}
+	#keyboard_6
+		{
+		width:3.5%;
+		height:65%;
+		top:0;
+		left:21.75%;
+		position:absolute;
+		background:url("../03_production/images/black.png")no-repeat;
+		background-size: 55%;
+		}
+		#keyboard_6:hover
+			{
+			background:url("../03_production/images/hover_black.png")no-repeat;
+			background-size: 55%;
+			}
+		#keyboard_6:active
+			{
+			background:url("../03_production/images/pressed_black.png")no-repeat;
+			background-size: 55%;
+			}
+	#keyboard_7
+		{
+		width:3.5%;
+		height:65%;
+		top:0;
+		left:26.5%;
+		position:absolute;
+		background:url("../03_production/images/black.png")no-repeat;
+		background-size: 55%;
+		}
+		#keyboard_7:hover
+			{
+			background:url("../03_production/images/hover_black.png")no-repeat;
+			background-size: 55%;
+			}
+		#keyboard_7:active
+			{
+			background:url("../03_production/images/pressed_black.png")no-repeat;
+			background-size: 55%;
+			}
+	#keyboard_9
+		{
+		width:3.5%;
+		height:65%;
+		top:0;
+		left:36%;
+		position:absolute;
+		background:url("../03_production/images/black.png")no-repeat;
+		background-size: 55%;
+		}
+		#keyboard_9:hover
+			{
+			background:url("../03_production/images/hover_black.png")no-repeat;
+			background-size: 55%;
+			}
+		#keyboard_9:active
+			{
+			background:url("../03_production/images/pressed_black.png")no-repeat;
+			background-size: 55%;
+			}
+	#keyboard_0
+		{
+		width:3.5%;
+		height:65%;
+		top:0;
+		left:40.75%;
+		position:absolute;
+		background:url("../03_production/images/black.png")no-repeat;
+		background-size: 55%;
+		}
+		#keyboard_0:hover
+			{			
+			background:url("../03_production/images/hover_black.png")no-repeat;
+			background-size: 55%;
+			}
+		#keyboard_0:active
+			{
+			background:url("../03_production/images/pressed_black.png")no-repeat;
+			background-size: 55%;
+			}
+	#keyboard_S
+		{
+		width:3.5%;
+		height:65%;
+		top:0;
+		left:50.25%;
+		position:absolute;
+		background:url("../03_production/images/black.png")no-repeat;
+		background-size: 55%;
+		}
+		#keyboard_S:hover
+			{		
+			background:url("../03_production/images/hover_black.png")no-repeat;
+			background-size: 55%;
+			}
+		#keyboard_S:active
+			{
+			background:url("../03_production/images/pressed_black.png")no-repeat;
+			background-size: 55%;
+			}
+	#keyboard_D
+		{
+		width:3.5%;
+		height:65%;
+		top:0;
+		left:55%;
+		position:absolute;
+		background:url("../03_production/images/black.png")no-repeat;
+		background-size: 55%;
+		}
+		#keyboard_D:hover
+			{			
+			background:url("../03_production/images/hover_black.png")no-repeat;
+			background-size: 55%;
+			}
+		#keyboard_D:active
+			{
+			background:url("../03_production/images/pressed_black.png")no-repeat;
+			background-size: 55%;
+			}
+	#keyboard_F
+		{
+		width:3.5%;
+		height:65%;
+		top:0;
+		left:59.75%;
+		position:absolute;
+		background:url("../03_production/images/black.png")no-repeat;
+		background-size: 55%;
+		}
+		#keyboard_F:hover
+			{		
+			background:url("../03_production/images/hover_black.png")no-repeat;
+			background-size: 55%;
+			}
+		#keyboard_F:active
+			{
+			background:url("../03_production/images/pressed_black.png")no-repeat;
+			background-size: 55%;
+			}
+	#keyboard_H
+		{
+		width:3.5%;
+		height:65%;
+		top:0;
+		left:69.25%;
+		position:absolute;
+		background:url("../03_production/images/black.png")no-repeat;
+		background-size: 55%;
+		}
+		#keyboard_H:hover
+			{		
+			background:url("../03_production/images/hover_black.png")no-repeat;
+			background-size: 55%;
+			}
+		#keyboard_H:active
+			{
+			background:url("../03_production/images/pressed_black.png")no-repeat;
+			background-size: 55%;
+			}
+	#keyboard_J
+		{
+		width:3.5%;
+		height:65%;
+		top:0;
+		left:74%;
+		position:absolute;
+		background:url("../03_production/images/black.png")no-repeat;
+		background-size: 55%;
+		}
+		#keyboard_J:hover
+			{			
+			background:url("../03_production/images/hover_black.png")no-repeat;
+			background-size: 55%;
+			}
+		#keyboard_J:active
+			{
+			background:url("../03_production/images/pressed_black.png")no-repeat;
+			background-size: 55%;
+			}
+	#keyboard_L
+		{
+		width:3.5%;
+		height:65%;
+		top:0;
+		left:83.5%;
+		position:absolute;
+		background:url("../03_production/images/black.png")no-repeat;
+		background-size: 55%;
+		}
+		#keyboard_L:hover
+			{		
+			background:url("../03_production/images/hover_black.png")no-repeat;
+			background-size: 55%;
+			}
+		#keyboard_L:active
+			{
+			background:url("../03_production/images/pressed_black.png")no-repeat;
+			background-size: 55%;
+			}
+	#keyboard_semicolon
+		{
+		width:3.5%;
+		height:65%;
+		top:0;
+		left:88.25%;
+		position:absolute;
+		background:url("../03_production/images/black.png")no-repeat;
+		background-size: 55%;
+		}
+		#keyboard_semicolon:hover
+			{		
+			background:url("../03_production/images/hover_black.png")no-repeat;
+			background-size: 55%;
+			}
+		#keyboard_semicolon:active
+			{
+			background:url("../03_production/images/pressed_black.png")no-repeat;
+			background-size: 55%;
+			}
+	#keyboard_apostrophe
+		{
+		width:3.5%;
+		height:65%;
+		top:0;
+		left:93%;
+		position:absolute;
+		background:url("../03_production/images/black.png")no-repeat;
+		background-size: 55%;
+		}
+		#keyboard_apostrophe:hover
+			{
+			background:url("../03_production/images/hover_black.png")no-repeat;
+			background-size: 55%;
+			}
+		#keyboard_apostrophe:active
+			{
+			background:url("../03_production/images/pressed_black.png")no-repeat;
+			background-size: 55%;
+			}

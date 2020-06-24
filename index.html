@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>ijus8</title>
         <link href="styles.css" rel="stylesheet">
+        <script src="script.js"></script>
     </head>
     <body>
-        <header>
+        <!-- <header>
             <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
                 <a class="navbar-brand" href="#">ijus8</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,6 +28,161 @@
                     </ul>
                 </div>
             </nav>
-        </header>
+        </header> -->
+        <div id="screen">
+            <div id="keyboard">
+                <div id="keyboard_Q" onClick="play_keyboard_Q()"></div>
+                <div id="keyboard_W" onClick="play_keyboard_W()"></div>
+                <div id="keyboard_E" onClick="play_keyboard_E()"></div>
+                <div id="keyboard_R" onClick="play_keyboard_R()"></div>
+                <div id="keyboard_T" onClick="play_keyboard_T()"></div>
+                <div id="keyboard_Y" onClick="play_keyboard_Y()"></div>
+                <div id="keyboard_U" onClick="play_keyboard_U()"></div>
+                <div id="keyboard_I" onClick="play_keyboard_I()"></div>
+                <div id="keyboard_O" onClick="play_keyboard_O()"></div>
+                <div id="keyboard_P" onClick="play_keyboard_P()"></div>
+                <div id="keyboard_Z" onClick="play_keyboard_Z()"></div>
+                <div id="keyboard_X" onClick="play_keyboard_X()"></div>
+                <div id="keyboard_C" onClick="play_keyboard_C()"></div>
+                <div id="keyboard_V" onClick="play_keyboard_V()"></div>
+                <div id="keyboard_B" onClick="play_keyboard_B()"></div>
+                <div id="keyboard_N" onClick="play_keyboard_N()"></div>
+                <div id="keyboard_M" onClick="play_keyboard_M()"></div>
+                <div id="keyboard_comma" onClick="play_keyboard_comma()"></div>
+                <div id="keyboard_period" onClick="play_keyboard_period()"></div>
+                <div id="keyboard_backslash" onClick="play_keyboard_backslash()"></div>
+                <div id="keyboard_filler"></div>
+                <!--	black keys>>		-->
+                <div id="keyboard_2" onClick="play_keyboard_2()"></div>
+                <div id="keyboard_3" onClick="play_keyboard_3()"></div>
+                <div id="keyboard_5" onClick="play_keyboard_5()"></div>
+                <div id="keyboard_6" onClick="play_keyboard_6()"></div>
+                <div id="keyboard_7" onClick="play_keyboard_7()"></div>
+                <div id="keyboard_9" onClick="play_keyboard_9()"></div>
+                <div id="keyboard_0" onClick="play_keyboard_0()"></div>
+                <div id="keyboard_S" onClick="play_keyboard_S()"></div>
+                <div id="keyboard_D" onClick="play_keyboard_D()"></div>
+                <div id="keyboard_F" onClick="play_keyboard_F()"></div>
+                <div id="keyboard_H" onClick="play_keyboard_H()"></div>
+                <div id="keyboard_J" onClick="play_keyboard_J()"></div>
+                <div id="keyboard_L" onClick="play_keyboard_L()"></div>
+                <div id="keyboard_semicolon" onClick="play_keyboard_semicolon()"></div>
+                <div id="keyboard_apostrophe" onClick="play_keyboard_apostrophe()"></div>
+                <!--	<<black keys		-->
+            </div>
+        </div>
+        <a href="final2.html">
+            <div id="videoframe">
+                <video id="video">
+                    <source src="../03_production/video/snake.mp4" style="position:absolute;width:100%;height:100%" frameborder="0" type="video/mp4">
+                </video>	
+            </div>
+        </a>
+        <audio id="note_2">
+            <source src="../03_production/sound/note_2.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_3">
+            <source src="../03_production/sound/note_3.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_5">
+            <source src="../03_production/sound/note_5.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_6">
+            <source src="../03_production/sound/note_6.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_7">
+            <source src="../03_production/sound/note_7.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_9">
+            <source src="../03_production/sound/note_9.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_0">
+            <source src="../03_production/sound/note_0.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_S">
+            <source src="../03_production/sound/note_S.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_D">
+            <source src="../03_production/sound/note_D.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_F">
+            <source src="../03_production/sound/note_F.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_H">
+            <source src="../03_production/sound/note_H.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_J">
+            <source src="../03_production/sound/note_J.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_L">
+            <source src="../03_production/sound/note_L.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_semicolon">
+            <source src="../03_production/sound/note_semicolon.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_apostrophe">
+            <source src="../03_production/sound/note_apostrophe.mp3" type="audio/mp3">
+        </audio>
+        <!--	^^black keys^^-->
+        <audio id="note_Q">
+            <source src="../03_production/sound/note_Q.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_W">
+            <source src="../03_production/sound/note_W.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_E">
+            <source src="../03_production/sound/note_E.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_R">
+            <source src="../03_production/sound/note_R.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_T">
+            <source src="../03_production/sound/note_T.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_Y">
+            <source src="../03_production/sound/note_Y.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_U">
+            <source src="../03_production/sound/note_U.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_I">
+            <source src="../03_production/sound/note_I.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_O">
+            <source src="../03_production/sound/note_O.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_P">
+            <source src="../03_production/sound/note_P.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_Z">
+            <source src="../03_production/sound/note_Z.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_X">
+            <source src="../03_production/sound/note_X.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_C">
+            <source src="../03_production/sound/note_C.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_V">
+            <source src="../03_production/sound/note_V.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_B">
+            <source src="../03_production/sound/note_B.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_N">
+            <source src="../03_production/sound/note_N.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_M">
+            <source src="../03_production/sound/note_M.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_comma">
+            <source src="../03_production/sound/note_comma.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_period">
+            <source src="../03_production/sound/note_period.mp3" type="audio/mp3">
+        </audio>
+        <audio id="note_backslash">
+            <source src="../03_production/sound/note_backslash.mp3" type="audio/mp3">
+        </audio>
     </body>
 </html>
