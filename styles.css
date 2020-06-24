@@ -347,7 +347,7 @@ body,html
 			}
 		#keyboard_N:active
 			{
-			background:url("../03_production/images/white_middle.png")no-repeat;
+			background:url("../03_production/images/pressed_white_middle.png")no-repeat;
 			background-size: 80%;
 			}
 	#keyboard_M
