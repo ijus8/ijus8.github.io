@@ -338,8 +338,8 @@ function keyDownEvent(e)
 			// two_1.currentTime=0;
             // two_1.play();
 			currentBackground = two_2.style.background;
-			// two_2.style.background="url('../03_production/images/pressed_black.png')no-repeat";
-			// two_2.style.backgroundSize="55%";
+			two_2.style.background="url('../03_production/images/pressed_black.png')no-repeat";
+			two_2.style.backgroundSize="55%";
             current = two_2;
             play_keyboard_2();
 			}
