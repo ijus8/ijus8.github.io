@@ -328,9 +328,6 @@ function keyDownEvent(e)
     var period_2 = document.getElementById("keyboard_period");
     var backslash_1 = document.getElementById("note_backslash");
     var backslash_2 = document.getElementById("keyboard_backslash");
-    var del = document.getElementById("screen");
-	var vid = document.getElementById("video");
-	var vidf = document.getElementById("videoframe");
         if(x == "50")
 			{
 			// two_1.currentTime=0;
@@ -647,14 +644,6 @@ function keyDownEvent(e)
 			backslash_2.style.backgroundSize="80%";
 			current = backslash_2;
 			}
-        else if(x == "8")
-            {
-			del.style.transform="scaleY(0) scaleX(0)";
-			vid.style.opacity=1;
-			vid.play();
-			vidf.style.height="298px";
-			vidf.style.width="298px";
-            }
     }
 document.onkeydown = keyDownEvent;
 document.onkeyup = keyUpEvent;
