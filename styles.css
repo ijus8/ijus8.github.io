@@ -24,7 +24,7 @@ body,html
 	min-width:950px;
 	height:40%;
 	min-height:400px;
-	bottom:0;
+	bottom:30px;
 	left:3%;
 	position:absolute;
 	overflow:hidden;
