@@ -18,7 +18,11 @@ html body
 	overflow:hidden;
     transition:all .65s ease 0s;
     background-color: #000;
-	}
+    }
+    
+/* Piano
+--------------------------------------------------------------------------------*/
+
 #keyboard
 	{
 	width:95%;
